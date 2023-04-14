@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
@@ -25,27 +25,33 @@
                     Web<span class="haeder-logo-log">Studio</span>
                 </a>
                 <ul class="header-list list">
-                    <li class="header-item"><a class="header-link link header-studio" href="./index.html">Studio</a></li>
-                    <li class="header-item"><a class="header-link link" href="./portfolio.html">Portfolio</a></li>
-                    <li class="header-item"><a class="header-link link header-cont" href="">Contacts</a></li>
+                    <li class="header-item">
+                        <a class="header-link link header-studio" href="./index.html">Studio</a></li>
+                    <li class="header-item">
+                        <a class="header-link link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="header-item">
+                        <a class="header-link link header-cont" href="">Contacts</a></li>
                 </ul>
             </nav>
-             <button type="button" class="mob-menu-open" data-mobilemenu-open>
+            <button type="button" class="mob-menu-open" data-mobilemenu-open>
                 <svg width="32" height="32" class="icon-menu">
-                    <use href="./images/icons.svg#icon-menu"></use>
+                    <use href="./images/icons.svg#icon-menu-hamburger"></use>
                 </svg>
             </button>
             <address class="address">
                 <ul class="address-list list">
                     <li class="address-item"><a class="address-mail link"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="address-item"><a class="address-tel link" href="tel:+110001111111">+11 (000)
+                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <ul class="address-list list">
+                    <li class="address-item">
+                        <a class="address-tel link" href="tel:+110001111111">+11 (000)
                             111-11-11</a>
                     </li>
                 </ul>
             </address>
         </div>
-        <div class="mobile-menu is-hidden container" data-mobilemenu>
+        <div class="mobile-menu is-hidden" data-mobilemenu>
             <div>
             <button type="button" class="mobile-menu-close" data-mobilemenu-close>
                 <svg class="mobile-menu-icon" width="8" height="8">
@@ -96,7 +102,7 @@
     </div>
     </header>
 
-   <main>
+    <main>
         <section class="hero">
             <div class="container hero-container">
                 <h1 class="hero-name">Effective Solutions
@@ -105,7 +111,7 @@
             </div>
         </section>
 
-        <!--<section class="desc">
+       <section class="desc">
             <div class="container">
                 <h2 class="desc-name"></h2>
                 <ul class="desc-list list">
@@ -115,11 +121,9 @@
                                 <use href="./images/icons.svg#icon-antenna-1"></use>
                             </svg>
                         </div>
-                        <div class="desc-block">
                             <h3 class="desc-subtitle">Strategy</h3>
                             <p class="desc-text">Our goal is to identify the business
                                 problem to walk away with the perfect and creative solution. </p>
-                        </div>
                     </li>
                     <li class="desc-item">
                         <div class="desc-container">
@@ -127,14 +131,12 @@
                                 <use href="./images/icons.svg#icon-clock-1"></use>
                             </svg>
                         </div>
-                        <div class="desc-block">
                             <h3 class="desc-subtitle">Punctuality</h3>
                             <p class="desc-text">Bring the key message to the brand's audience for the best price within
                                 the
                                 shortest possible
                                 time.
                             </p>
-                        </div>
                     </li>
                     <li class="desc-item">
                         <div class="desc-container">
@@ -142,12 +144,10 @@
                                 <use href="./images/icons.svg#icon-diagram-1"></use>
                             </svg>
                         </div>
-                        <div class="desc-block">
                             <h3 class="desc-subtitle">Diligence</h3>
                             <p class="desc-text">Research and confirm brands that present the strongest digital growth
                                 opportunities and minimize
                                 risk.</p>
-                        </div>
                     </li>
                     <li class="desc-item">
                         <div class="desc-container">
@@ -155,29 +155,38 @@
                                 <use href="./images/icons.svg#icon-astronaut-1"></use>
                             </svg>
                         </div>
-                        <div class="desc-block">
                             <h3 class="desc-subtitle">Technologies</h3>
                             <p class="desc-text">Design practice focused on digital experiences. We bring forth a deep
                                 passion
                                 for
                                 problem-solving.
                             </p>
-                        </div>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <section class="features">
+       <section class="features">
             <div class="container">
                 <h2 class="features-name">What are we doing</h2>
                 <ul class="features-list list">
-                    <li class="features-item"><img class="features-img" src="./images/img1-min.jpg" alt="computer"
-                            width="360"></li>
-                    <li class="features-item"><img class="features-img" src="./images/img2-min.jpg" alt="telefon"
-                            width="360"></li>
-                    <li class="features-item"><img class="features-img" src="./images/img3-min.jpg"
-                            alt="computer+telefon" width="360"></li>
+                    <li class="features-item">
+                        <img class="features-img" 
+                        srcset="./images/img1.2x.jpg 2x"
+                        src="./images/img1-min.jpg"
+                        alt="computer"
+                        width="360"></li>
+                    <li class="features-item">
+                        <img class="features-img" 
+                        srcset="./images/img2.2x.jpg 2x"
+                        src="./images/img2-min.jpg" 
+                        alt="telefon"
+                        width="360"></li>
+                    <li class="features-item">
+                        <img class="features-img"
+                        srcset="./images/img3.2x.jpg 2x" 
+                        src="./images/img3-min.jpg"
+                        alt="computer+telefon" width="360"></li>
                 </ul>
             </div>
         </section>
@@ -187,7 +196,11 @@
                 <h2 class="information-name">Our Team</h2>
                 <ul class="information-list list">
                     <li class="information-item">
-                        <img class="information-img" src="./images/person1.jpg" alt="portrait" width="264">
+                        <img class="information-img"
+                        srcset="./images/person1.2x.jpg.jpg 2x" 
+                        src="./images/person1.jpg" 
+                        alt="portrait" 
+                        width="264">
                         <div class="information-container">
                             <h3 class="information-title">Mark Guerrero</h3>
                             <p class="information-desc">Product Designer</p>
@@ -216,7 +229,10 @@
                         </div>
                     </li>
                     <li class="information-item">
-                        <img class="information-img" src="./images/person2.jpg" alt="portrait" width="264">
+                        <img class="information-img" 
+                        srcset="./images/person2.2x.jpg.jpg 2x"
+                        src="./images/person2.jpg" 
+                        alt="portrait" width="264">
                         <div class="information-container">
                             <h3 class="information-title">Tom Ford</h3>
                             <p class="information-desc">Frontend Developer</p>
@@ -245,7 +261,10 @@
                         </div>
                     </li>
                     <li class="information-item">
-                        <img class="information-img" src="./images/person3.jpg" alt="portrait" width="264">
+                        <img class="information-img" 
+                        srcset="./images/person3.2x.jpg.jpg 2x"
+                        src="./images/person3.jpg" 
+                        alt="portrait" width="264">
                         <div class="information-container">
                             <h3 class="information-title">Camila Garcia</h3>
                             <p class="information-desc">Marketing</p>
@@ -274,7 +293,10 @@
                         </div>
                     </li>
                     <li class="information-item">
-                        <img class="information-img" src="./images/person4.jpg" alt="portrait" width="264">
+                        <img class="information-img" 
+                        srcset="./images/person4.2x.jpg.jpg 2x"
+                        src="./images/person4.jpg" 
+                        alt="portrait" width="264">
                         <div class="information-container">
                             <h3 class="information-title">Daniel Wilson</h3>
                             <p class="information-desc">UI Designer</p>
@@ -306,7 +328,7 @@
                 </ul>
             </div>
         </section>
-        <section class="company">
+       <section class="company">
             <div class="container">
             <h2 class="company-name">Customers</h2>
             <ul class="company-list list">
@@ -455,6 +477,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobilemenu.js"></script>
 </body>
 
 </html>
